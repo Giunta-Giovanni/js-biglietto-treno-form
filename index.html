@@ -18,22 +18,22 @@
                 <form id="ticket-form">
                     <div class="mb-3">
                         <label for="name" class="form-label">Nome Cognome</label>
-                        <input type="text" id="name" class="form-control" placeholder="Inserisci il tuo nome" required>
+                        <input type="text" id="name-field" class="form-control" placeholder="Inserisci il tuo nome" required>
                     </div>
                     <div class="mb-3">
                         <label for="kilometers" class="form-label">Km da percorrere</label>
-                        <input type="number" id="kilometers" class="form-control" placeholder="Inserisci il numero di Km da percorrere " required>
+                        <input type="number" id="kilometers-field" class="form-control" placeholder="Inserisci il numero di Km da percorrere " required>
                     </div>
                     <div class="mb-3">
                         <label for="age" class="form-label">Fascia d'età</label>
-                        <select id="age" class="form-select" required>
+                        <select id="age-field" class="form-select" required>
                           <option value="minorenne">Minorenne</option>
                           <option value="maggiorenne">Maggiorenne</option>
                           <option value="over65">Over 65</option>
                         </select>
                     </div>
                     <div class="d-flex justify-content-center gap-3">
-                        <button type="button" id="generate-btn" class="btn btn-danger">Invia</button>
+                        <button type="submit" id="generate-btn" class="btn btn-danger">Invia</button>
                         <!-- <button type="reset" id="cancel-btn" class="btn btn-secondary">Annulla</button> -->
                     </div>
                 </form>

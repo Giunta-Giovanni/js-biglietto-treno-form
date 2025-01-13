@@ -10,11 +10,29 @@ Scrivere un programma che chieda all’utente: - Il numero di chilometri da perc
 ************************/
 
 // salviamo i file di Input
-const nameField = document.getElementById ('name');
-const kilometersField = document.getElementById ('kilometers')
-const form = document.getElementById ('ticket-form')
+const nameField = document.getElementById ('name-field');
+const kilometersField = document.getElementById ('kilometers-field');
+const ageField = document.getElementById ('age-field')
+const form = document.getElementById ('ticket-form');
 
-console.log(nameField, kilometersField, form);
+// // tramite l'invio del form prendiamo i valori dei campi selezionati e li scriviamo nei blocchi
+form.addEventListener('submit', (event) => {
+    // blocco l'invio dei form
+    event.preventDefault();
+
+    //salvo i valori di input e gli levo eventuali spazi con trim
+    const nameValue = nameField.value.trim(); //Nome e cognome
+    const kilometersValue = parseFloat(kilometersField.value.trim()); //kilometri
+    const ageValue = parseInt(ageField.value.trim()); //età
+    const price = calcTicketPrice (kilometersValue, ageValue); //calcolo del prezzo
+
+    // mostro il risultato
+    const risultato = `Name: ${nameValue}, Kilometers: ${kilometersValue}, Age: ${ageValue}, Prezzo del biglietto ${price}`;
+    console.log(risultato);
+})
+
+
+
 
 
 
