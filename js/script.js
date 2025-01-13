@@ -9,15 +9,14 @@ Scrivere un programma che chieda all’utente: - Il numero di chilometri da perc
 
 ************************/
 
-// Input
-// Chiediamo all'utente il numero di chilometri che vuole percorrere
-let chilometriuser = parseInt(prompt("Quanti chilometri devi percorrere?"))
+// salviamo i file di Input
+const nameField = document.getElementById ('name');
+const kilometersField = document.getElementById ('kilometers')
+const form = document.getElementById ('ticket-form')
 
-// Chiediamo all'utente l'età del passeggero
-let etauser = parseInt(prompt("Inserisci l'età del passeggero"))
+console.log(nameField, kilometersField, form);
 
 
-console.log(calcTicketPrice(chilometriuser, etauser));
 
 
 
