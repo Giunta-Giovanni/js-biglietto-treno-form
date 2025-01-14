@@ -76,6 +76,7 @@ form.addEventListener('reset', function() {
 // funzione per calcolare il prezzo della tratta
 function calcTicketPrice(chilometri, eta){
 
+
     // moltiplico i chilometri inseriti dall'utente con il prezzo al km e salvo la variabile
     let prezzotratta = chilometri * 0.21;
 
