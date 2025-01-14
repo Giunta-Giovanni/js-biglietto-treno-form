@@ -51,6 +51,24 @@ form.addEventListener('submit', (event) => {
 
 })
 
+// uso il tasto reset per resettare i dati di input e output
+form.addEventListener('reset', function() {
+    const nameValue = ''; 
+    const kilometersValue = '';
+    const ageValue = '';       
+    const messageValue = '';   
+    const carriageValue = '';
+    const cpCodeValue = '';
+    const priceValue = '';
+
+    name.innerText = '-';
+    offer.innerHTML = '-';
+    carriage.innerHTML = '-';
+    cpCode.innerHTML = '-';
+    ticketPrice.innerHTML = '-';
+
+})
+
 
 
 // Function
