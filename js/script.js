@@ -53,8 +53,6 @@ form.addEventListener('submit', (event) => {
 
 
 
-
-
 // Function
 
 // funzione per calcolare il prezzo della tratta
